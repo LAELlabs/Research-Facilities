@@ -12,6 +12,22 @@ body {
   background-color: white;
   color: black; /* main text colour */
 }
+/* Right-hand sidebar with images */
+.sidebar {
+  position: fixed;       /* sticks to the right side when scrolling */
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;             /* space between images */
+}
+
+.sidebar img {
+  width: 150px;          /* adjust size of images */
+  max-width: 100%;
+  display: block;
+}
 
 h1 {
   color: black;
@@ -56,7 +72,13 @@ li {
 </head>
 
 <body>
-    <img src="LAEL_logo.png" alt="LAEL Logo" class="logo">
+    <!-- Right-hand sidebar -->
+  <div class="sidebar">
+    <img src="LAEL_logo.png" alt="LAEL Logo">
+    <img src="phonetics-lab-400x300.jpg" alt="Ultrasound Equipment">
+    <img src="Eye-tracking-Lab-1-400x300.jpg" alt="Eye Tracking Equipment">
+    <img src="EEG-lab-400.jpg" alt="EEG Equipment">
+  </div>
   <h1>Research Facilities</h1>
   <p>Welcome to our discipline's research facilities page. Explore the inventory that allows us to conduct unique and innovative research!</p>
 
